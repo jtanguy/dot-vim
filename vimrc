@@ -18,3 +18,13 @@ call pathogen#helptags()
 " Enable filetype plugins
 filetype plugin indent on
 
+" -----------------------
+" Solarized configuration
+" -----------------------
+syntax on
+if has('gui_running')
+	set guifont=Inconsolata:h14 "Set default font: Incosolata
+  set guioptions=egmrt "Remove gui icons
+  set background=dark
+  colorscheme solarized
+endif
