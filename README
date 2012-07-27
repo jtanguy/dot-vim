@@ -1,12 +1,32 @@
 Configuration files for vim
 ===========================
 
+## Install
+
+Provided this repository is located in your ~/.vim folder, you must symlink two things.
+
+First: symlink the `autoload` directory in the pathogen subdir to the top-level `~/.vim`.
+
+~~~~
+ln -s ~<username>/.vim/bundle/pathogen/autoload ~<username>/.vim/autoload
+~~~~
+
+Your `~/.vim` directory should look like this:
+~~~~
+README
+autoload -> bundle/pathogen/autoload
+bundle
+vimrc
+~~~~
+
+
 ## Bundles
 
 - Pathogen, by Tim Pope -- Bundle installation made easier. https://github.com/tpope/vim-pathogen
 
-[Solarized]:http://ethanschoonover.com/solarized
+- Solarized, by Ethan Schoonover -- Precision colors for machines and people. http://ethanschoonover.com/solarized
 
 ## Blog posts
 
-[Coming Home to Vim]:http://stevelosh.com/blog/2010/09/coming-home-to-vim
+- Coming Home to Vim, by Steve Losh. http://stevelosh.com/blog/2010/09/coming-home-to-vim
+
