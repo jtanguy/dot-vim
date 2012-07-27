@@ -1,10 +1,10 @@
 Configuration files for vim
-
-# Sources
+===========================
 
 ## Bundles
 
-[Pathogen]:https://github.com/tpope/vim-pathogen
+- Pathogen, by Tim Pope -- Bundle installation made easier. https://github.com/tpope/vim-pathogen
+
 [Solarized]:http://ethanschoonover.com/solarized
 
 ## Blog posts
