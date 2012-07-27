@@ -1,0 +1,12 @@
+Configuration files for vim
+
+# Sources
+
+## Bundles
+
+[Pathogen]:https://github.com/tpope/vim-pathogen
+[Solarized]:http://ethanschoonover.com/solarized
+
+## Blog posts
+
+[Coming Home to Vim]:http://stevelosh.com/blog/2010/09/coming-home-to-vim
