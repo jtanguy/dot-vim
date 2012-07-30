@@ -32,7 +32,9 @@ vimrc
 
 - Vim-markdownfootnotes, by David Sanson and Felipe Morales -- Insert Extended Markdown Footnotes in Vim . https://github.com/vim-pandoc/vim-markdownfootnotes
 
-- Fugitive, by Tim Pope -- A Git wrapper so awsome, it should be illegal. https://github.com/tpope/vim-fugitive.git
+- Fugitive, by Tim Pope -- A Git wrapper so awsome, it should be illegal. https://github.com/tpope/vim-fugitive
+
+- Syntastic, by Martin Grenfell -- Syntax checking hacks for vim. https://github.com/scrooloose/syntastic
 
 ## Blog posts
 
