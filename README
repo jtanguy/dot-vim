@@ -26,9 +26,15 @@ vimrc
 
 - Solarized, by Ethan Schoonover -- Precision colors for machines and people. http://ethanschoonover.com/solarized
 
-- Powerline, by Kim Silkebækken -- The ultimate vim statusline utility. https://github.com/Lokaltog/vim-powerline[^The custom Inconsolata font is needed for the current settings]
+- Powerline, by Kim Silkebækken -- The ultimate vim statusline utility. https://github.com/Lokaltog/vim-powerline[^1]
+
+- Vim-pandoc, by David Sanson and Felipe Morales -- Vim bundle for pandoc users. https://github.com/vim-pandoc/vim-pandoc
+
+- Vim-markdownfootnotes, by David Sanson and Felipe Morales -- Insert Extended Markdown Footnotes in Vim . https://github.com/vim-pandoc/vim-markdownfootnotes
 
 ## Blog posts
 
 - Coming Home to Vim, by Steve Losh. http://stevelosh.com/blog/2010/09/coming-home-to-vim
 
+
+[^1]: This installation of powerline needs the patched Inconsolata font.
