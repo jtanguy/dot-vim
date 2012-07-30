@@ -26,6 +26,8 @@ vimrc
 
 - Solarized, by Ethan Schoonover -- Precision colors for machines and people. http://ethanschoonover.com/solarized
 
+- Powerline, by Kim Silkebækken -- The ultimate vim statusline utility. https://github.com/Lokaltog/vim-powerline[^The custom Inconsolata font is needed for the current settings]
+
 ## Blog posts
 
 - Coming Home to Vim, by Steve Losh. http://stevelosh.com/blog/2010/09/coming-home-to-vim

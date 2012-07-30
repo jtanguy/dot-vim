@@ -23,10 +23,11 @@ filetype plugin indent on
 " -----------------------
 syntax on
 if has('gui_running')
-	set guifont=Inconsolata:h14 "Set default font: Incosolata
-  set guioptions=egmrt "Remove gui icons
-  set background=dark
-  colorscheme solarized
+    set guifont=Inconsolata-dz\ for\ Powerline:h12 "Set default font: Incosolata
+    let g:Powerline_symbols="fancy"
+    set guioptions=egmrt "Remove gui icons
+    set background=dark
+    colorscheme solarized
 endif
 
 " ---------------------
