@@ -26,9 +26,11 @@ if has('gui_running')
     set guifont=Inconsolata-dz\ for\ Powerline:h12 "Set default font: Incosolata
     let g:Powerline_symbols="fancy"
     set guioptions=egmrt "Remove gui icons
-    set background=dark
-    colorscheme solarized
+else
+   let g:Powerline_symbols="compatible"
 endif
+set background=dark
+colorscheme solarized
 
 " ---------------------
 " General configuration
