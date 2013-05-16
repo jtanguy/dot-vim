@@ -48,7 +48,7 @@ set showmode
 set showcmd
 set wildmenu
 set wildmode=list:longest
-set visualbell
+"set visualbell
 set cursorline
 set ttyfast
 set ruler
@@ -84,6 +84,4 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
-
-au FocusLost * :wa
 
