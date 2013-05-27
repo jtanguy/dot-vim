@@ -60,6 +60,9 @@ if version >= 703
 else
     set number
 endif
+if has('mouse')
+    set mouse=a
+endif
 let mapleader=","
 
 " Search options
@@ -72,6 +75,11 @@ set incsearch
 set showmatch
 set hlsearch
 nnoremap <leader><space> :noh<cr>
+
+nnoremap j gj
+nnoremap k gk
+
+inoremap jj <Esc>
 
 " Learn vim hjkl the hard way
 nnoremap <up> <nop>
