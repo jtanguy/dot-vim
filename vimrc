@@ -110,7 +110,9 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
-
+" Columns
+set colorcolumn=80
+set tw=80
 
 " viminfo stores the the state of your previous editing session
 set viminfo+=n~/.vim/viminfo
