@@ -13,3 +13,6 @@
 [submodule "bundle/vimproc"]
 	path = bundle/vimproc
 	url = https://github.com/Shougo/vimproc.vim.git
+[submodule "bundle/todo-txt"]
+	path = bundle/todo-txt
+	url = https://github.com/davidoc/todo.txt-vim.git
