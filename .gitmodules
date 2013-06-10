@@ -16,3 +16,6 @@
 [submodule "bundle/todo-txt"]
 	path = bundle/todo-txt
 	url = https://github.com/davidoc/todo.txt-vim.git
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = https://github.com/sjl/gundo.vim.git
