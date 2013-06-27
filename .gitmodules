@@ -22,3 +22,6 @@
 [submodule "bundle/table-mode"]
 	path = bundle/table-mode
 	url = https://github.com/dhruvasagar/vim-table-mode.git
+[submodule "bundle/idris"]
+	path = bundle/idris
+	url = https://github.com/jhenahan/idris-vim.git
