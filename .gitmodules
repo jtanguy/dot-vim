@@ -25,3 +25,6 @@
 [submodule "bundle/idris"]
 	path = bundle/idris
 	url = https://github.com/jhenahan/idris-vim.git
+[submodule "bundle/unite"]
+	path = bundle/unite
+	url = https://github.com/Shougo/unite.vim.git

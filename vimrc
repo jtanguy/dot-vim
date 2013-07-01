@@ -114,6 +114,11 @@ inoremap <right> <nop>
 set colorcolumn=80
 set tw=80
 
+" Unite bindings
+nnoremap <C-p> :UniteWithCurrentDir file_rec/async<cr>
+nnoremap <C-P> :Unite file_rec/async<cr>
+nnoremap <leader>s :Unite -quick-match buffer<cr>
+
 " viminfo stores the the state of your previous editing session
 set viminfo+=n~/.vim/viminfo
 
