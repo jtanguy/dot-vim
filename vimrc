@@ -25,7 +25,7 @@ syntax on
 let g:airline_left_sep = '»'
 let g:airline_right_sep = '«'
 let g:airline_linecolumn_prefix = '␊ '
-let g:airline_fugitive_prefix = '⎇ '
+let g:airline_fugitive_prefix = 'BR '
 let g:airline_paste_symbol = 'Þ'
 set background=dark
 colorscheme solarized
@@ -118,6 +118,13 @@ nnoremap <C-P> :Unite file_rec/async<cr>
 nnoremap <leader>s :Unite -quick-match buffer<cr>
 
 set pastetoggle=<F2>
+
+" Syntastic config
+let g:syntastic_stl_format = '[%E{E:%e}%B{,}%W{W:%w}]'
+let syntastic_error_symbol = 'E'
+let syntastic_style_error_symbol = 'S'
+let syntastic_warning_symbol = 'w'
+let syntastic_style_warning_symbol ='s'
 
 " viminfo stores the the state of your previous editing session
 set viminfo+=n~/.vim/viminfo
