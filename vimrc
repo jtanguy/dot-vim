@@ -22,13 +22,11 @@ filetype plugin indent on
 " Solarized configuration
 " -----------------------
 syntax on
-if has('gui_running')
-    set guifont=Inconsolata-dz\ for\ Powerline:h12 "Set default font: Incosolata
-    let g:Powerline_symbols="fancy"
-    set guioptions=egmrt "Remove gui icons
-else
-   let g:Powerline_symbols="compatible"
-endif
+let g:airline_left_sep = '»'
+let g:airline_right_sep = '«'
+let g:airline_linecolumn_prefix = '␊ '
+let g:airline_fugitive_prefix = '⎇ '
+let g:airline_paste_symbol = 'Þ'
 set background=dark
 colorscheme solarized
 
@@ -118,6 +116,8 @@ set tw=80
 nnoremap <C-p> :UniteWithCurrentDir file_rec/async<cr>
 nnoremap <C-P> :Unite file_rec/async<cr>
 nnoremap <leader>s :Unite -quick-match buffer<cr>
+
+set pastetoggle=<F2>
 
 " viminfo stores the the state of your previous editing session
 set viminfo+=n~/.vim/viminfo

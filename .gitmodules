@@ -31,3 +31,9 @@
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/hdevtools"]
+	path = bundle/hdevtools
+	url = https://github.com/bitc/vim-hdevtools.git
+[submodule "bundle/airline"]
+	path = bundle/airline
+	url = https://github.com/bling/vim-airline.git
