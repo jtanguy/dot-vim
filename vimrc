@@ -120,12 +120,18 @@ nnoremap <leader>s :Unite -quick-match buffer<cr>
 set pastetoggle=<F2>
 
 " Syntastic config
-let g:syntastic_stl_format = '[%E{E:%e}%B{,}%W{W:%w}]'
+let g:syntastic_check_on_open=1
+let g:syntastic_stl_format = '[%E{E:%e}%B{/}%W{W:%w}]'
 let syntastic_error_symbol = 'E'
 let syntastic_style_error_symbol = 'S'
 let syntastic_warning_symbol = 'w'
 let syntastic_style_warning_symbol ='s'
 
+" YouCompleteMe config
+let g:ycm_filetype_blacklist = {
+    \ 'mail' : 1,
+    \ 'pandoc' : 1,
+    \}
 " viminfo stores the the state of your previous editing session
 set viminfo+=n~/.vim/viminfo
 
