@@ -7,12 +7,6 @@
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = git@github.com:vim-scripts/taglist.vim.git
-[submodule "bundle/ghc-mod"]
-	path = bundle/ghc-mod
-	url = https://github.com/eagletmt/ghcmod-vim.git
-[submodule "bundle/vimproc"]
-	path = bundle/vimproc
-	url = https://github.com/Shougo/vimproc.vim.git
 [submodule "bundle/todo-txt"]
 	path = bundle/todo-txt
 	url = https://github.com/davidoc/todo.txt-vim.git
