@@ -11,6 +11,7 @@ set nocompatible
 
 " Load plugins managed by pathogen
 filetype off " Fixes issues with ftdetect files. See pathogen docs.
+
 let g:pathogen_disabled = ['pathogen'] " Prevent pathogen from self-sourcing
 call pathogen#infect()
 call pathogen#helptags()
@@ -53,7 +54,9 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 if version >= 703
+    " Set both number and relativenumber for numbers plugin
     set relativenumber
+    set number
     " undofile - This allows you to use undos after exiting and restarting
     " This, like swap and backups, uses .vim-undo first, then ~/.vim/undo
     " :help undo-persistence
