@@ -115,10 +115,6 @@ inoremap <right> <nop>
 set colorcolumn=80
 set tw=80
 
-" Unite bindings
-nnoremap <C-p> :UniteWithCurrentDir file_rec/async<cr>
-nnoremap <C-P> :Unite file_rec/async<cr>
-nnoremap <leader>s :Unite -quick-match buffer<cr>
 
 set pastetoggle=<F2>
 
