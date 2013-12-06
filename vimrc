@@ -5,8 +5,31 @@
 " Disable vi compatibility
 set nocompatible
 
+" Load plugins managed by pathogen
+filetype off " Fixes issues with ftdetect files. See pathogen docs.
+
+let g:pathogen_disabled = ['pathogen'] " Prevent pathogen from self-sourcing
+call pathogen#infect()
+call pathogen#helptags()
+
 " Enable filetype plugins
 filetype plugin indent on
+
+" -----------------------
+" Solarized configuration
+" -----------------------
+syntax on
+set background=dark
+colorscheme solarized
+
+" ---------------------
+" Airline configuration
+" ---------------------
+let g:airline_left_sep = '»'
+let g:airline_right_sep = '«'
+let g:airline_linecolumn_prefix = '␊ '
+let g:airline_fugitive_prefix = 'BR '
+let g:airline_paste_symbol = 'Þ'
 
 " ---------------------
 " General configuration
@@ -29,8 +52,10 @@ set ttyfast
 set ruler
 set backspace=indent,eol,start
 set laststatus=2
-set number
 if version >= 703
+    " Set both number and relativenumber for numbers plugin
+    set relativenumber
+    set number
     " undofile - This allows you to use undos after exiting and restarting
     " This, like swap and backups, uses .vim-undo first, then ~/.vim/undo
     " :help undo-persistence
@@ -42,6 +67,7 @@ if version >= 703
     set undodir+=~/.vim/undo//
     set undofile
 else
+    set number
     " Save your swp files to a less annoying place than the current directory.
     " If you have .vim-swap in the current directory, it'll use that.
     " Otherwise it saves it to ~/.vim/swap, ~/tmp or .
@@ -95,9 +121,20 @@ map <C-l> <C-w>l
 set colorcolumn=80
 set tw=80
 
+" viminfo stores the the state of your previous editing session
+set viminfo+=n~/.vim/viminfo
 
 set pastetoggle=<F2>
 
-" viminfo stores the the state of your previous editing session
-set viminfo+=n~/.vim/viminfo
+" -----------------------
+" Syntastic configuration
+" -----------------------
+let g:syntastic_check_on_open=1
+let g:syntastic_stl_format = '[%E{E:%e}%B{/}%W{W:%w}]'
+let syntastic_error_symbol = 'E'
+let syntastic_style_error_symbol = 'S'
+let syntastic_warning_symbol = 'w'
+let syntastic_style_warning_symbol ='s'
+
+let b:lhs_markup="pandoc"
 
