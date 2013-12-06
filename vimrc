@@ -136,5 +136,16 @@ let syntastic_style_error_symbol = 'S'
 let syntastic_warning_symbol = 'w'
 let syntastic_style_warning_symbol ='s'
 
+" -----------------------
+" Pantondoc configuration
+" -----------------------
+let g:pantondoc_command_latex_engine="pdflatex"
+let g:pantondoc_biblio_sources="bctg"
+let g:pandoc_use_embeds_in_codeblocks_for_langs = ["haskell"]
+au BufNewFile,BufRead *.md   set filetype=pandoc
+
+" --------------------------
+" Custom lhaskell.vim syntax
+" --------------------------
 let b:lhs_markup="pandoc"
 

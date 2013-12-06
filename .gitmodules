@@ -38,3 +38,11 @@
 	path = bundle/gundo
 	url = https://github.com/sjl/gundo.vim.git
 	branch = master
+[submodule "bundle/vim-pantondoc"]
+	path = bundle/vim-pantondoc
+	url = https://github.com/vim-pandoc/vim-pantondoc.git
+	branch = master
+[submodule "bundle/vim-pandoc-syntax"]
+	path = bundle/vim-pandoc-syntax
+	url = https://github.com/vim-pandoc/vim-pandoc-syntax.git
+	branch = master
