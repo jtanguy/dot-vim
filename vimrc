@@ -66,6 +66,7 @@ if version >= 703
     set undodir=./.vim-undo//
     set undodir+=~/.vim/undo//
     set undofile
+    set noswapfile
 else
     set number
     " Save your swp files to a less annoying place than the current directory.
