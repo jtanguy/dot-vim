@@ -126,6 +126,9 @@ set viminfo+=n~/.vim/viminfo
 
 set pastetoggle=<F2>
 
+" Sudo to write
+cnoremap w!! w !sudo tee % >/dev/null
+
 " -----------------------
 " Syntastic configuration
 " -----------------------
