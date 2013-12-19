@@ -46,3 +46,7 @@
 	path = bundle/vim-pandoc-syntax
 	url = https://github.com/vim-pandoc/vim-pandoc-syntax.git
 	branch = master
+[submodule "bundle/yaml"]
+	path = bundle/yaml
+	url = https://github.com/vim-scripts/yaml.vim.git
+	branch = master
