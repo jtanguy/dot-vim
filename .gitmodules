@@ -50,3 +50,11 @@
 	path = bundle/yaml
 	url = https://github.com/vim-scripts/yaml.vim.git
 	branch = master
+[submodule "bundle/rust"]
+	path = bundle/rust
+	url = https://github.com/wting/rust.vim.git
+	branch = master
+[submodule "bundle/hilinks"]
+	path = bundle/hilinks
+	url = https://github.com/gerw/vim-HiLinkTrace.git
+	branch = master
