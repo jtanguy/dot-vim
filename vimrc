@@ -25,8 +25,8 @@ colorscheme solarized
 " ---------------------
 " Airline configuration
 " ---------------------
-let g:airline_left_sep = '»'
-let g:airline_right_sep = '«'
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
 let g:airline_linecolumn_prefix = 'L '
 let g:airline_fugitive_prefix = 'BR '
 let g:airline_paste_symbol = 'Þ'
@@ -129,10 +129,10 @@ inoremap <right> <nop>
 
 
 " Easy window navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
 
 " Columns
 set colorcolumn=80
@@ -161,6 +161,7 @@ let syntastic_style_warning_symbol ='s'
 " -----------------------
 let g:pantondoc_command_latex_engine="pdflatex"
 let g:pantondoc_biblio_sources="bctg"
+let g:pantondoc_use_pandoc_markdown = 1
 let g:pandoc_use_embeds_in_codeblocks_for_langs = ["haskell"]
 au BufNewFile,BufRead *.md   set filetype=pandoc
 
