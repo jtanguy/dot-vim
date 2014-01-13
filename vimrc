@@ -162,7 +162,7 @@ let syntastic_style_warning_symbol ='s'
 let g:pantondoc_command_latex_engine="pdflatex"
 let g:pantondoc_biblio_sources="bctg"
 let g:pantondoc_use_pandoc_markdown = 1
-let g:pandoc_use_embeds_in_codeblocks_for_langs = ["haskell"]
+let g:pandoc_use_embeds_in_codeblocks_for_langs = ["haskell", "c"]
 au BufNewFile,BufRead *.md   set filetype=pandoc
 
 " --------------------------
@@ -170,3 +170,5 @@ au BufNewFile,BufRead *.md   set filetype=pandoc
 " --------------------------
 let b:lhs_markup="pandoc"
 
+
+let g:tex_conceal= 'abdmgsS'
