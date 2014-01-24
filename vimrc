@@ -143,6 +143,8 @@ set viminfo+=n~/.vim/viminfo
 
 set pastetoggle=<F2>
 
+nnoremap <F5> :GundoToggle<CR>
+
 " Sudo to write
 cnoremap w!! w !sudo tee % >/dev/null
 
