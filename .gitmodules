@@ -58,3 +58,7 @@
 	path = bundle/hilinks
 	url = https://github.com/gerw/vim-HiLinkTrace.git
 	branch = master
+[submodule "bundle/calendar"]
+	path = bundle/calendar
+	url = https://github.com/mattn/calendar-vim.git
+	branch = master

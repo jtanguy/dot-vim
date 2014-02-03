@@ -100,6 +100,7 @@ if has('mouse')
     set mouse=a
 endif
 let mapleader=","
+let maplocalleader=","
 
 " Search options
 nnoremap / /\v
@@ -165,6 +166,7 @@ let g:pantondoc_command_latex_engine="pdflatex"
 let g:pantondoc_biblio_sources="bctg"
 let g:pantondoc_use_pandoc_markdown = 1
 let g:pandoc_use_embeds_in_codeblocks_for_langs = ["haskell", "c"]
+let g:pantondoc_folding_fold_yaml = 1
 au BufNewFile,BufRead *.md   set filetype=pandoc
 
 " --------------------------
@@ -174,3 +176,12 @@ let b:lhs_markup="pandoc"
 
 
 let g:tex_conceal= 'abdmgsS'
+
+" -----------------
+" Calendar settings
+" -----------------
+let g:calendar_monday=1
+let g:calendar_mark = 'right'
+let g:calendar_weeknm = 5
+let g:calendar_filetype = 'pandoc'
+
