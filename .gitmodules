@@ -66,3 +66,7 @@
 	path = bundle/vim-voom
 	url = https://github.com/vim-voom/VOoM.git
 	branch = master
+[submodule "bundle/vim-commentary"]
+	path = bundle/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
+	branch = master
