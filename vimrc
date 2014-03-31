@@ -185,3 +185,5 @@ let g:calendar_mark = 'right'
 let g:calendar_weeknm = 5
 let g:calendar_filetype = 'pandoc'
 
+
+au BufNewFile,BufRead *.tex   set filetype=tex
