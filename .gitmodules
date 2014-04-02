@@ -78,3 +78,11 @@
 	path = bundle/mustache
 	url = git://github.com/mustache/vim-mustache-handlebars.git
 	branch = master
+[submodule "bundle/tablemode"]
+	path = bundle/tablemode
+	url = https://github.com/dhruvasagar/vim-table-mode.git
+	branch = master
+[submodule "bundle/latexbox"]
+	path = bundle/latexbox
+	url = https://github.com/LaTeX-Box-Team/LaTeX-Box.git
+	branch = master
