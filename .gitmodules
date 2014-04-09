@@ -70,3 +70,7 @@
 	path = bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
 	branch = master
+[submodule "bundle/latexbox"]
+	path = bundle/latexbox
+	url = git://github.com/LaTeX-Box-Team/LaTeX-Box.git
+	branch = master
