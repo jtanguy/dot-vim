@@ -74,3 +74,7 @@
 	path = bundle/latexbox
 	url = git://github.com/LaTeX-Box-Team/LaTeX-Box.git
 	branch = master
+[submodule "bundle/vim-projectile"]
+	path = bundle/vim-projectile
+	url = http://github.com/tpope/vim-projectile
+	branch = master
