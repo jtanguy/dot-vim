@@ -86,11 +86,11 @@
 	path = bundle/latexbox
 	url = https://github.com/LaTeX-Box-Team/LaTeX-Box.git
 	branch = master
-[submodule "bundle/projectile"]
-	path = bundle/projectile
-	url = https://github.com/tpope/vim-projectile.git
-	branch = master
 [submodule "bundle/idris"]
 	path = bundle/idris
 	url = https://github.com/idris-hackers/idris-vim.git
+	branch = master
+[submodule "bundle/vim-projectile"]
+	path = bundle/vim-projectile
+	url = http://github.com/tpope/vim-projectile
 	branch = master
