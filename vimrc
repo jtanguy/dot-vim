@@ -165,12 +165,15 @@ let g:syntastic_tex_chktex_quiet_messages = { "type":  "style",
 " -----------------------
 " Pantondoc configuration
 " -----------------------
+let g:pantondoc_enabled_modules = ["formatting", "folding",
+    \ "command", "bibliographies", "completion", "toc", "metadata"]
 let g:pantondoc_command_latex_engine="pdflatex"
 let g:pantondoc_biblio_sources="bctg"
 let g:pantondoc_use_pandoc_markdown = 1
 let g:pandoc_use_embeds_in_codeblocks_for_langs = ["haskell", "c"]
 let g:pantondoc_folding_fold_yaml = 1
-au BufNewFile,BufRead *.md   set filetype=pandoc
+let path = $PATH
+" au BufNewFile,BufRead *.md   set filetype=pandoc
 
 " --------------------------
 " Custom lhaskell.vim syntax
@@ -190,3 +193,8 @@ let g:calendar_filetype = 'pandoc'
 
 
 au BufNewFile,BufRead *.tex   set filetype=tex
+
+" ------------------
+" Fugitive shortcuts
+" ------------------
+nnoremap <leader>gs :Gstatus<cr>
