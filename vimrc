@@ -194,6 +194,8 @@ let g:calendar_filetype = 'pandoc'
 
 au BufNewFile,BufRead *.tex   set filetype=tex
 
+
+let g:voom_ft_modes = {'pandoc': 'pandoc', 'tex': 'latex'}
 " ------------------
 " Fugitive shortcuts
 " ------------------
