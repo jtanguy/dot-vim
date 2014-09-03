@@ -90,7 +90,11 @@
 	path = bundle/idris
 	url = https://github.com/idris-hackers/idris-vim.git
 	branch = master
-[submodule "bundle/vim-projectile"]
-	path = bundle/vim-projectile
-	url = http://github.com/tpope/vim-projectile
+[submodule "bundle/vim-hdevtools"]
+	path = bundle/vim-hdevtools
+	url = https://github.com/bitc/vim-hdevtools
+	branch = master
+[submodule "bundle/vim-projectionist"]
+	path = bundle/vim-projectionist
+	url = https://github.com/tpope/vim-projectionist.git
 	branch = master
