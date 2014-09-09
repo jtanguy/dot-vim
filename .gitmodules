@@ -54,10 +54,6 @@
 	path = bundle/rust
 	url = https://github.com/wting/rust.vim.git
 	branch = master
-[submodule "bundle/hilinks"]
-	path = bundle/hilinks
-	url = https://github.com/gerw/vim-HiLinkTrace.git
-	branch = master
 [submodule "bundle/calendar"]
 	path = bundle/calendar
 	url = https://github.com/mattn/calendar-vim.git
@@ -97,4 +93,8 @@
 [submodule "bundle/vim-projectionist"]
 	path = bundle/vim-projectionist
 	url = https://github.com/tpope/vim-projectionist.git
+	branch = master
+[submodule "bundle/vim-dispatch"]
+	path = bundle/vim-dispatch
+	url = https://github.com/tpope/vim-dispatch.git
 	branch = master
