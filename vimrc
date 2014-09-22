@@ -116,6 +116,8 @@ nnoremap <leader><space> :noh<cr>
 nnoremap j gj
 nnoremap k gk
 
+nnoremap Q gq
+
 inoremap jk <Esc>
 
 " Learn vim hjkl the hard way
