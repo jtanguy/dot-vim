@@ -98,3 +98,7 @@
 	path = bundle/vim-dispatch
 	url = https://github.com/tpope/vim-dispatch.git
 	branch = master
+[submodule "bundle/vim-characterize"]
+	path = bundle/vim-characterize
+	url = https://github.com/tpope/vim-characterize.git
+	branch = master
