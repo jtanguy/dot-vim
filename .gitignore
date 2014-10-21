@@ -1,4 +1,5 @@
 undo
 viminfo
 spell/*.spl
-viminfo.tmp
+spell/*.sug
+*.tmp
