@@ -210,8 +210,8 @@ let g:projectionist_heuristics = {
       \ "*.cabal": {
       \     "test/*/Tests.hs": { "alternate": "src/{}.hs",
       \                          "type":"test",
-      \                          "template": ["module {capitalize|dot} where"] },
-      \     "src/*.hs": { "alternate": "test/{}/Test.hs",
+      \                          "template": ["module {capitalize|dot}.Tests where"] },
+      \     "src/*.hs": { "alternate": "test/{}/Tests.hs",
       \                   "type": "src",
       \                   "template": ["module {capitalize|dot} where"] },
       \     "*": {"make": "cabal build",
