@@ -22,30 +22,8 @@ syntax on
 set background=dark
 colorscheme solarized
 
-" ---------------------
-" Airline configuration
-" ---------------------
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
-let g:airline_linecolumn_prefix = 'L '
-let g:airline_fugitive_prefix = 'BR '
-let g:airline_paste_symbol = 'Þ'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#syntastic#enabled = 1
-let g:airline_mode_map = {
-  \ '__' : '-',
-  \ 'n'  : 'N',
-  \ 'i'  : 'I',
-  \ 'R'  : 'R',
-  \ 'c'  : 'C',
-  \ 'v'  : 'V',
-  \ 'V'  : 'V',
-  \ '' : 'V',
-  \ 's'  : 'S',
-  \ 'S'  : 'S',
-  \ '' : 'S',
-  \ }
-let g:airline_symbols#whitespace = 'Ξ'
+" Airline
+so ~/.vim/rc/airline
 
 " ---------------------
 " General configuration
@@ -151,18 +129,8 @@ nnoremap <F5> :GundoToggle<CR>
 " Sudo to write
 cnoremap w!! w !sudo tee % >/dev/null
 
-" -----------------------
 " Syntastic configuration
-" -----------------------
-let g:syntastic_check_on_open=1
-let g:syntastic_stl_format = '[%E{E:%e}%B{/}%W{W:%w}]'
-let syntastic_error_symbol = 'E'
-let syntastic_style_error_symbol = 'S'
-let syntastic_warning_symbol = 'w'
-let syntastic_style_warning_symbol ='s'
-
-let g:syntastic_tex_chktex_quiet_messages = { "type":  "style",
-                                             \ "regex": 'Command terminated with space.' }
+so ~/.vim/rc/syntastic
 
 " -----------------------
 " Pantondoc configuration
@@ -213,7 +181,19 @@ let g:projectionist_heuristics = {
       \                          "template": ["module {capitalize|dot}.Tests where"] },
       \     "src/*.hs": { "alternate": "test/{}/Tests.hs",
       \                   "type": "src",
-      \                   "template": ["module {capitalize|dot} where"] },
+      \                   "template": [ "{-|",
+      \                                 "Module      : {capitalize|dot}",
+      \                                 "Copyright   : (c) 2014 Julien Tanguy",
+      \                                 "License     : BSD3",
+      \                                 "",
+      \                                 "Maintainer  : julien.tanguy@jhome.fr",
+      \                                 "Stability   : experimental",
+      \                                 "Portability : portable",
+      \                                 "",
+      \                                 "",
+      \                                 "",
+      \                                 "-}",
+      \                                 "module {capitalize|dot} where"] },
       \     "*": {"make": "cabal build",
       \           "start": "cabal run"
       \          }
