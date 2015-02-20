@@ -102,3 +102,7 @@
 	path = bundle/vim-characterize
 	url = https://github.com/tpope/vim-characterize.git
 	branch = master
+[submodule "bundle/id3"]
+	path = bundle/id3
+	url = https://github.com/AndrewRadev/id3.vim.git
+	branch = master

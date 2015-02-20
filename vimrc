@@ -199,11 +199,11 @@ let g:projectionist_heuristics = {
       \          }
       \ }}
 
-augroup haskell
-    au FileType haskell nnoremap <buffer> <F6> :HdevtoolsType<CR>
-    au FileType haskell nnoremap <buffer> <F7> :HdevtoolsInfo<CR>
-    au FileType haskell nnoremap <buffer> <silent> <F8> :HdevtoolsClear<CR>
-augroup END
+" augroup haskell
+"     au FileType haskell nnoremap <buffer> <F6> :HdevtoolsType<CR>
+"     au FileType haskell nnoremap <buffer> <F7> :HdevtoolsInfo<CR>
+"     au FileType haskell nnoremap <buffer> <silent> <F8> :HdevtoolsClear<CR>
+" augroup END
 
 if filereadable(".vim.custom")
     so .vim.custom
