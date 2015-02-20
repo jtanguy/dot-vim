@@ -22,8 +22,32 @@ syntax on
 set background=dark
 colorscheme solarized
 
-" Airline
-so ~/.vim/rc/airline
+" ---------------------
+" Airline configuration
+" ---------------------
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_symbols.linenr = 'L '
+let g:airline_symbols.paste = 'Þ'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline_mode_map = {
+  \ '__' : '-',
+  \ 'n'  : 'N',
+  \ 'i'  : 'I',
+  \ 'R'  : 'R',
+  \ 'c'  : 'C',
+  \ 'v'  : 'V',
+  \ 'V'  : 'V',
+  \ '' : 'V',
+  \ 's'  : 'S',
+  \ 'S'  : 'S',
+  \ '' : 'S',
+  \ }
+let g:airline_symbols#whitespace = 'Ξ'
 
 " ---------------------
 " General configuration
