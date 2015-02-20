@@ -102,7 +102,15 @@
 	path = bundle/vim-characterize
 	url = https://github.com/tpope/vim-characterize.git
 	branch = master
-[submodule "bundle/id3"]
-	path = bundle/id3
-	url = https://github.com/AndrewRadev/id3.vim.git
+[submodule "bundle/oil"]
+	path = bundle/oil
+	url = https://github.com/vim-scripts/OIL.vim
+	branch = master
+[submodule "bundle/hilinks"]
+	path = bundle/hilinks
+	url = https://github.com/kergoth/vim-hilinks.git
+	branch = master
+[submodule "bundle/vim-clojure"]
+	path = bundle/vim-clojure
+	url = https://github.com/guns/vim-clojure-static.git
 	branch = master
