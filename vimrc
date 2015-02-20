@@ -153,8 +153,20 @@ nnoremap <F5> :GundoToggle<CR>
 " Sudo to write
 cnoremap w!! w !sudo tee % >/dev/null
 
+" -----------------------
 " Syntastic configuration
-so ~/.vim/rc/syntastic
+" -----------------------
+let g:syntastic_check_on_open=1
+let g:syntastic_stl_format = '[%E{E:%e}%B{/}%W{W:%w}]'
+let syntastic_error_symbol = 'E'
+let syntastic_style_error_symbol = 'S'
+let syntastic_warning_symbol = 'w'
+let syntastic_style_warning_symbol ='s'
+
+let g:syntastic_tex_chktex_quiet_messages = { "type":  "style",
+                                             \ "regex": 'Command terminated with space.' }
+
+
 
 " -----------------------
 " Pantondoc configuration
