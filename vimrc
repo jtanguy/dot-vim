@@ -25,13 +25,13 @@ colorscheme solarized
 " ---------------------
 " Airline configuration
 " ---------------------
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_linecolumn_prefix = 'L '
-let g:airline_fugitive_prefix = 'BR '
-let g:airline_paste_symbol = 'Þ'
+let g:airline_symbols.linenr = 'L'
+let g:airline_symbols.paste = 'Þ'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#syntastic#enabled = 1
 let g:airline_mode_map = {
@@ -104,8 +104,6 @@ endif
 let mapleader=","
 let maplocalleader=","
 
-set spelllang=fr,en
-
 " Search options
 nnoremap / /\v
 vnoremap / /\v
@@ -173,15 +171,13 @@ let g:syntastic_tex_chktex_quiet_messages = { "type":  "style",
 " -----------------------
 " Pantondoc configuration
 " -----------------------
-let g:pandoc#modules#enabled = ["formatting", "hypertext",
+let g:pantondoc_enabled_modules = ["formatting", "folding",
     \ "command", "bibliographies", "completion", "toc", "metadata"]
-let g:pandoc#modules#disabled = ["folding"]
-let g:pandoc#toc#position="left"
-let g:pandoc#command#latex_engine="pdflatex"
-let g:pandoc#biblio#sources="bctg"
-let g:pandoc#filetypes#pandoc_markdown = 1
-let g:pandoc#folding#fold_yaml = 1
-let g:pandoc#syntax#codeblocks#embeds#langs = ["haskell", "c"]
+let g:pantondoc_command_latex_engine="pdflatex"
+let g:pantondoc_biblio_sources="bctg"
+let g:pantondoc_use_pandoc_markdown = 1
+let g:pandoc_use_embeds_in_codeblocks_for_langs = ["haskell", "c"]
+let g:pantondoc_folding_fold_yaml = 1
 let path = $PATH
 " au BufNewFile,BufRead *.md   set filetype=pandoc
 
@@ -190,10 +186,8 @@ let path = $PATH
 " --------------------------
 let b:lhs_markup="pandoc"
 
-let g:hs_highlight_debug = 1
 
-
-" let g:tex_conceal= 'abdmgsS'
+let g:tex_conceal= 'abdmgsS'
 
 " -----------------
 " Calendar settings
@@ -225,7 +219,7 @@ let g:projectionist_heuristics = {
       \                   "type": "src",
       \                   "template": [ "{-|",
       \                                 "Module      : {capitalize|dot}",
-      \                                 "Copyright   : (c) 2015 Julien Tanguy",
+      \                                 "Copyright   : (c) 2014 Julien Tanguy",
       \                                 "License     : BSD3",
       \                                 "",
       \                                 "Maintainer  : julien.tanguy@jhome.fr",
@@ -241,27 +235,11 @@ let g:projectionist_heuristics = {
       \          }
       \ }}
 
-
-" -----------------------
-" Hdevtools configuration
-" -----------------------
-function! FindCabalSandboxRoot()
-    return finddir('.cabal-sandbox', './;')
-endfunction
-
-function! FindCabalSandboxRootPackageConf()
-    return glob(FindCabalSandboxRoot().'/*-packages.conf.d')
-endfunction
-
-let g:syntastic_haskell_hdevtools_args = '-g-ilib -g-isrc -g-i. -g-idist/build/autogen -g-Wall -g-package-conf='.FindCabalSandboxRootPackageConf()
-
-augroup haskell
-    au FileType haskell nnoremap <buffer> <F6> :HdevtoolsType<CR>
-    au FileType haskell nnoremap <buffer> <F7> :HdevtoolsInfo<CR>
-    au FileType haskell nnoremap <buffer> <silent> <F8> :HdevtoolsClear<CR>
-augroup END
-
-au BufNewFile,BufRead *.oil   set filetype=oil
+" augroup haskell
+"     au FileType haskell nnoremap <buffer> <F6> :HdevtoolsType<CR>
+"     au FileType haskell nnoremap <buffer> <F7> :HdevtoolsInfo<CR>
+"     au FileType haskell nnoremap <buffer> <silent> <F8> :HdevtoolsClear<CR>
+" augroup END
 
 if filereadable(".vim.custom")
     so .vim.custom
