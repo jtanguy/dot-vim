@@ -207,6 +207,19 @@ let g:voom_ft_modes = {'pandoc': 'pandoc', 'tex': 'latex'}
 " ------------------
 nnoremap <leader>gs :Gstatus<cr>
 
+" -------------------
+" CtrlP configuration
+" -------------------
+function! CtrlPMatch(items, str, limit, mmode, ispath, crfile, regex) abort
+  let items = copy(a:items)
+  if a:ispath
+    call filter(items, 'v:val !=# a:crfile')
+  endif
+  return haystack#filter(items, a:str)
+endfunction
+let g:ctrlp_match_func = {'match': function('CtrlPMatch')}
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
 " ----------------------
 " Projectionist defaults
 " ----------------------
