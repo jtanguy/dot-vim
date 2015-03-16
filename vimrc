@@ -146,6 +146,8 @@ set tw=80
 " viminfo stores the the state of your previous editing session
 set viminfo+=n~/.vim/viminfo
 
+set shortmess+=I
+
 set pastetoggle=<F2>
 
 nnoremap <F5> :GundoToggle<CR>

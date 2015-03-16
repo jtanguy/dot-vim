@@ -122,3 +122,7 @@
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim
 	branch = master
+[submodule "envs/osek/oil"]
+	path = envs/osek/oil
+	url = https://github.com/vim-scripts/OIL.vim
+	branch = master
